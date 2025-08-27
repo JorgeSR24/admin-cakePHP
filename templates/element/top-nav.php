@@ -16,7 +16,7 @@
           
           
           <div class="dropdown-divider"></div>
-          <a href="<? $this->Url->build("/admin/users/logout"); ?>" class="dropdown-item dropdown-footer">Logout</a>
+          <a href="<?= $this->Url->build("/admin/users/logout") ?>" class="dropdown-item dropdown-footer">Logout</a>
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
