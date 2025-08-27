@@ -23,9 +23,9 @@ class UsersSeed extends AbstractSeed
 
         $hash = new DefaultPasswordHasher();
         $data = [
-            "name" => "Carla Janet",
-            "email" => "carlajan82@gmail.com",
-            "phone" => "617483943",
+            "name" => "Jorge Sanchez",
+            "email" => "sanchezruanojorge.com",
+            "phone" => "628287684",
             "password" => $hash->hash("admin@123")
         ];
 

@@ -49,7 +49,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright &copy; <?php echo date("Y"); ?> .</strong>
-    Jorge Sanchez Ruano & Carla Janet All rights reserved.
+    Jorge Sanchez Ruano All rights reserved.
     
   </footer>
 
