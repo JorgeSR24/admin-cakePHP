@@ -9,8 +9,9 @@ class StaffsController extends AppController{
     {
         parent::initialize();
         $this->viewBuilder()->setLayout("admin");
-        $this->loadModel("Staffs");
-        $this->loadModel("Colleges");
+        
+        $this->Colleges = $this->fetchTable('Colleges');
+        $this->Staffs = $this->fetchTable('Staffs');
     }
 
     public function addStaff(){

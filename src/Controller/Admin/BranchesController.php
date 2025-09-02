@@ -11,8 +11,8 @@ class BranchesController extends AppController
         parent::initialize();
         $this->viewBuilder()->setLayout("admin");
 
-        $this->loadModel("Colleges");
-        $this->loadModel("Branches");
+       $this->Colleges = $this->fetchTable('Colleges');
+       $this->Branches = $this->fetchTable('Branches');
     }
 
     public function addBranch()

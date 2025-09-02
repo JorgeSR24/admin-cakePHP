@@ -9,9 +9,9 @@ class ReportsController extends AppController{
     {
         parent::initialize();
          $this->viewBuilder()->setLayout("admin");
-         $this->loadModel("Colleges");
-         $this->loadModel("Students");
-         $this->loadModel("Staffs");
+         $this->Colleges = $this->fetchTable('Colleges');
+        $this->Students = $this->fetchTable('Students');
+        $this->Staffs = $this->fetchTable('Staffs');
     }
 
     public function collegesReport(){

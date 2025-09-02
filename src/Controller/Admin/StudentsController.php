@@ -9,9 +9,10 @@ class StudentsController extends AppController{
     {
         parent::initialize();
         $this->viewBuilder()->setLayout("admin");
-        $this->loadModel("Students");
-        $this->loadModel("Colleges");
-        $this->loadModel("Branches");
+
+        $this->Colleges = $this->fetchTable('Colleges');
+        $this->Students = $this->fetchTable('Students');
+        $this->Branches = $this->fetchTable('Branches');
     }
 
     public function addStudent(){

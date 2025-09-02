@@ -10,7 +10,7 @@ class CollegesController extends AppController
     public function initialize(): void
     {
         parent::initialize();
-        $this->loadModel("Colleges");
+        $this->Colleges = $this->fetchTable('Colleges');
         $this->viewBuilder()->setLayout("admin");
     }
 
